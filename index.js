@@ -17,7 +17,7 @@ const routes = require('./routes/routes.js');
 app.use('/',routes)
 
 // launch our server on port 80.
-const server = app.listen(80, () => {
+const server = app.listen(3100, () => {
     console.log('listening on port 80....');
     console.log('App Started at :',d.toJSON().slice(0,19).replace('T',':'));
     
