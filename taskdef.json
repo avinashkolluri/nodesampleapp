@@ -1,0 +1,22 @@
+{
+    "executionRoleArn": "SED_REPLACE_EXECUTION_ROLE_ARN",
+    "containerDefinitions": [
+      {
+        "name": "nodeservicetwo",
+        "image": "<IMAGE1_NAME>",
+        "essential": true,
+        "portMappings": [
+          {
+            "hostPort": 80,
+            "protocol": "tcp",
+            "containerPort": 80
+          }
+        ]
+      }
+    ],
+    "requiresCompatibilities": ["FARGATE"],
+    "networkMode": "awsvpc",
+    "cpu": "512",
+    "memory": "3072",
+    "family": "SED_REPLACE_FAMILY"
+  }
